@@ -1,0 +1,10 @@
+PYTHON FILES:
+
+sympathy_game.py: 
+	- File to train either greedy, sympathetic, benchmarks or EMOTE baselines (both E-Feature or E-Image Imagination networks)
+	- Default delta = 0.5. Can be changed within the code.
+
+# to run greedy: empathetic_mode = False, sympathetic_mode = False
+# to run sympathetic: empathetic_mode = False, sympathetic_mode = True
+# to run empathetic: empathetic_mode = True, sympathetic_mode = True
+# 'pixel' = feature, 'state' = image
