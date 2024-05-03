@@ -1,10 +1,33 @@
 PYTHON FILES:
 
-sympathy_game.py: 
-	- File to train either greedy, sympathetic, benchmarks or EMOTE baselines (both E-Feature or E-Image Imagination networks)
+Experiment 1 - 3 Agent Game
+
+3_agent_game_EMOTE_CSI_Greedy_Benchmark.py: 
+	- File to train either greedy, CSI, benchmark or EMOTE baselines (both E-Feature or E-Image Imagination networks)
 	- Default delta = 0.5. Can be changed within the code.
 
-# to run greedy: empathetic_mode = False, sympathetic_mode = False
-# to run sympathetic: empathetic_mode = False, sympathetic_mode = True
-# to run empathetic: empathetic_mode = True, sympathetic_mode = True
+# to run greedy: empathy_mode = False, CSI_mode = False
+# to run benchmark: empathy_mode = True, CSI_mode = True, bench_mark = 2
+# to run CSI: empathy_mode = False, CSI_mode = True
+# to run EMOTE: empathy_mode = True, CSI_mode = True
+# 'pixel' = feature, 'state' = image
+
+3_agent_game_RE.py: 
+	- File to train RE baseline 
+	- References pre-prepared random policy trajectory of Indep Agent 1 and 2. These are included in the folder
+
+3_agent_game_SCIRL.py: 
+	- File to train SCIRL baseline
+
+
+Experiment 2 - Sympathy Framework
+
+sympathy_game.py: 
+	- File to train either greedy, sympathetic, benchmark or EMOTE baselines (both E-Feature or E-Image Imagination networks)
+	- Default delta = 0.5. Can be changed within the code.
+
+# to run greedy: empathy_mode = False, sympathy_mode= False
+# to run benchmark: empathy_mode = True, sympathy_mode= True, bench_mark = 2
+# to run sympathetic: empathy_mode = False, sympathy_mode= True
+# to run EMOTE: empathy_mode = True, sympathy_mode= True
 # 'pixel' = feature, 'state' = image
